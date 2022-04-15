@@ -9,6 +9,9 @@ const baseConfig = {
     path: path.resolve(__dirname, '../dist'), // 出口路径
     clean: true, // 每次打包之前清空dist目录m
   },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
   module: {
     rules: [
       {
@@ -52,4 +55,4 @@ const baseConfig = {
   ],
 };
 
-module.exports = baseConfig
+module.exports = baseConfig;
